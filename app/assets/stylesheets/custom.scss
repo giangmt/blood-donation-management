@@ -1,0 +1,50 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* header */
+
+.navbar-inverse {
+  background-color: #f7f7f7;
+  border-color: #139bdc;
+}
+.navbar-brand {
+  float: left;
+  padding: 15px 15px;
+  font-size: 20px;
+  line-height: 20px;
+  height: 50px;
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a {
+  color: #5d6fc7;
+  background-color: transparent;
+}
+
+/* jumbotron */
+.jumbotron {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.container .jumbotron, .container-fluid .jumbotron {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+.carousel-inner img {
+  width: 100%; /* Set width to 100% */
+  min-height: 200px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none; 
+  }
+}
+
