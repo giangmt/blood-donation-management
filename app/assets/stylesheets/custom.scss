@@ -19,6 +19,19 @@
   background-color: transparent;
 }
 
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  padding-top: 0px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  text-decoration: none;
+}
+
 /* jumbotron */
 .jumbotron {
   padding-top: 18px;
