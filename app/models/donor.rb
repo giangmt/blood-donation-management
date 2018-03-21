@@ -6,4 +6,12 @@ class Donor < ApplicationRecord
 				uniqueness: {case_sencetive: false}
 	validates :id_card, presence: true, length: {maximum: 20},
 				uniqueness: {case_sencetive: false}	
+	has_many :donations, dependent: :destroy
+	belongs_to :gender
+	belongs_to :bloodgroup
+	belongs_to :are
+	belongs_to :province_city_district
+	belongs_to :ward_village
+	belongs_to :occupation
+
 end

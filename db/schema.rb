@@ -10,15 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180321074923) do
-
-  create_table "admins", force: :cascade do |t|
-    t.string "username"
-    t.string "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "password_digest"
-  end
+ActiveRecord::Schema.define(version: 20180321183521) do
 
   create_table "areas", force: :cascade do |t|
     t.integer "province_city_district_id"
@@ -58,6 +50,17 @@ ActiveRecord::Schema.define(version: 20180321074923) do
     t.integer "id_card"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "place_of_issue"
+    t.date "date_of_birth"
+    t.integer "gender_id"
+    t.integer "weight"
+    t.integer "bloodgroup_id"
+    t.string "address"
+    t.integer "are_id"
+    t.integer "wardvillage_id"
+    t.string "moblie"
+    t.integer "occupation_id"
+    t.string "organization"
   end
 
   create_table "genders", force: :cascade do |t|
@@ -85,7 +88,7 @@ ActiveRecord::Schema.define(version: 20180321074923) do
   end
 
   create_table "statuses", force: :cascade do |t|
-    t.string "name"
+    t.boolean "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -96,6 +99,11 @@ ActiveRecord::Schema.define(version: 20180321074923) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "password_digest"
+    t.string "remember_digest"
+    t.boolean "admin"
+    t.string "activation_digest"
+    t.boolean "activated"
+    t.datetime "activated_at"
   end
 
   create_table "ward_villages", force: :cascade do |t|
