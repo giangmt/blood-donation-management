@@ -3,16 +3,15 @@
 <div class="col-sm-8">
 <form>
 <h4>Xem lịch sử hiến máu của bạn</h4>
-
 <div class="input-group">
-<input type="text" class="form-control" placeholder="Nhập số chứng minh thư của bạn để xem lịch sử hiến máu của bạn">
+<input type="text" class="form-control" placeholder="Nhập số chứng minh thư để xem lịch sử hiến máu của bạn">
 <div class="input-group-btn">
-<button class="btn btn-default" type="submit">
+<a href="donors/show" class="btn btn-default" type="submit">
 <i class="glyphicon glyphicon-search"></i>
-</button>
+</a>
 </div>
-</div>
-</form><br><br>
+</div><hr>
+</form>
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 <!-- Indicators -->
 <ol class="carousel-indicators">
@@ -23,19 +22,33 @@
 <!-- Wrapper for slides -->
 <div class="carousel-inner" role="listbox">
 <div class="item active">
-<img src="http://i35.servimg.com/u/f35/19/09/66/76/14064010.png" alt="Image">
+<img src="/assets/14064010.png" alt="Image">
 <div class="carousel-caption">
 <h3></h3>
 <p></p>
 </div>      
 </div>
-
 <div class="item">
-<img src="http://i35.servimg.com/u/f35/19/09/66/76/14064010.png" alt="Image">
+<img src="/assets/7.jpeg" alt="Image">
 <div class="carousel-caption">
-<h3></h3>
-<p></p>
-</div>      
+<a href="https://baomoi.com/nu-cuoi-co-be-dieu-uoc-thu-7-qua-doi-vi-ung-thu/c/23130958.epi" target="_blank" style="color:yellow;"><h3>Nụ cười cô bé 'Điều ước thứ 7' qua đời vì ung thư</h3></a>
+<p>Nụ cười thiên thần của cô bé 10 tuổi trong "Chuyến bay của Linh" Điều ước thứ 7 vừa qua đời vì ung thư khiến khán giả không bao giờ quên...</p>
+</div>   
+</div>
+<div class="item">
+<img src="/assets/6.jpg" alt="Image">
+<div class="carousel-caption">
+<a href="https://vov.vn/suc-khoe/ung-thu-da-tro-thanh-mot-dai-dich-o-viet-nam-482258.vov" target="_blank" style="color:yellow;"><h3>Ung thư máu đang là đại dịch ở Việt Nam
+</h3></a>
+<p>VOV.VN - Bệnh nhân ung thư ở Việt Nam đang ngày một nhiều và hệ lụy của nó đối với gia đình bệnh nhân và xã hội vô cùng nặng nề...</p>
+</div>   
+</div>
+<div class="item">
+<img src="/assets/5.jpg" alt="Image">
+<div class="carousel-caption">
+<a href="http://thoidai.com.vn/nhan-ai/hoan-canh/hanh-phuc-chua-kip-mim-cuoi-voi-vo-chong-co-con-ung-thu-mau_t114c29n29731" target="_blank" style="color:yellow;"><h3>Cô gái ung thư máu lặng lẽ về trời, buông tay mối tình 7 năm</h3></a>
+<p>Cô gái ung thư máu lặng lẽ về trời, buông tay mối tình 7 năm...</p>
+</div>   
 </div>
 </div>
 
@@ -52,30 +65,32 @@
 </div>
 <div class="col-sm-4">
 <div class="jumbotron">
-<h4>Phiếu đăng ký hiến máu</h4> 
+<h4 class="text-center"><strong>PHIẾU ĐĂNG KÝ HIẾN MÁU</strong></h4>
+<!-- <h4>Phiếu đăng ký hiến máu</h4> -->
+<hr>
 <form>
 <div class="form-group">
-<label for="usr">Họ và tên:</label>
+<h5><strong>Họ và tên:</strong></h5>
 <input type="text" class="form-control" id="usr">
 </div>
 <div class="form-group">
-<label for="usr">Ngày sinh:</label>
+<h5><strong>Ngày sinh:</strong></h5>
 <input type="text" class="form-control" id="usr">
 </div>
 <div class="form-group">
-<label for="usr">Email:</label>
+<h5><strong>Email:</strong></h5>
 <input type="text" class="form-control" id="usr">
 </div>
 <div class="form-group">
-<label for="usr">Số điện thoại:</label>
+<h5><strong>Số điện thoại:</strong></h5>
 <input type="text" class="form-control" id="usr">
 </div>
 <div class="form-group">
-<label for="usr">Số chứng minh thư:</label>
+<h5><strong>Số chứng minh thư:</strong></h5>
 <input type="text" class="form-control" id="usr">
 </div>
 <div class="form-group">
-<label for="usr">Địa chỉ liên hệ:</label>
+<h5><strong>Địa chỉ liên hệ:</strong></h5>
 <input type="text" class="form-control" id="usr">
 </div>
 <div class="form-group">
@@ -90,12 +105,41 @@
 <label class="radio-inline"><input type="radio" name="optradio">AB</label>
 <label class="radio-inline"><input type="radio" name="optradio">O</label>
 </div>
-<div class="checkbox">
-<label><input type="checkbox"><a =href>Tôi đã đọc và chấp nhận các điều khoản</a></label>
+<div class="checkbox" data-toggle="modal" data-target="#myModal">
+<label><input type="checkbox" data-dismiss="modal">
+<a =href>  Tôi đã đọc và chấp nhận các điều khoản</a>
+</label>
 </div>
-<button type="submit" class="btn btn-primary">Gửi thông tin đăng ký</button>
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center"><strong>10 LÝ DO HIẾN MÁU TÌNH NGUYỆN</strong></h4>
+        </div>
+        <div class="modal-body">
+          <h5>1. Hiến máu sẽ cứu sống người bệnh.</h5>
+          <h5>2. Chưa có dược phẩm nào thay thế được máu.</h5>
+          <h5>3. Tính chung trên thế giới, cứ mỗi 3 phút là có 01 người chết vì không có máu truyền. Tính bình quân cứ 100 người nhập viện thì có 01 người cần truyền máu.</h5>
+          <h5>4. Khoảng 6% dân số đủ tiêu chuẩn hiến máu, nhưng mới chỉ có dưới 2% tham gia hiến máu.</h5>
+          <h5>5. Máu khi được phân tích thành máu thành phần có thể giúp điều trị bệnh cho nhiều người.</h5>
+          <h5>6. Bạn sẽ giúp cho cộng đồng của bạn được an toàn hơn từ nguồn máu sạch của bạn.</h5>
+          <h5>7. Hiến máu là một nghĩa cử cao cả.</h5>
+          <h5>8. Bạn sẽ được tư vấn khám sức khỏe</h5>
+          <h5>9. Bạn sẽ biết được nhóm máu của mình để sẳn sàng giúp đỡ người khác khi cần thiết.</h5>
+          <h5>10. Hiến máu rất đơn giản và an toàn.</h5>
+          <h4 class="text-center"><strong>“ Mỗi giọt máu cho đi, một cuộc đời ở lại! “</strong></h4>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Tôi đã hiểu</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+  <a href="donations/new" class="btn btn-primary" role="button">Gửi thông tin đăng ký</a>
+  </div>
 </form>
 </div>
 </div>
 </div>
-<hr>
